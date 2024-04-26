@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            max-width: 100%;
+             max-height: 95%;
+              width: 611px;
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 20px;
+            margin: 20px;
+
+        }
+
+
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            padding: 13px;
+            
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            width: 85%;
+            padding: 8px;
+            background-color: black;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="./image/image11.png" alt="Image">
+        </div>
+        <div class="form-container">
+            <h2 style="text-align: center; ">Create an Account
+                <hr style="width: 30%; border: 3px solid red; border-radius: 3px; ">
+            </h2>
+            <form id="signupForm" action="login.html" method="post">
+                <div style="display: flex; gap: 50px; ">
+                    <label for="text">First name :
+                        <br>
+                        <input type="text" name="firstname" placeholder="First Name" style="margin-right: 10px;"
+                            required>
+                    </label>
+                    <label for="text"> Last name :
+                        <br>
+                        <input type="text" name="lastname" placeholder="Last Name" required>
+                    </label>
+                </div>
+
+                <div style="display: flex; gap: 50px;">
+                    <label for="email">Email :
+                        <br>
+
+                        <input type="email" name="email" placeholder="Email" style="margin-right: 10px;" required>
+                    </label>
+
+                    <label for="tel">phone no :
+                        <br>
+                        <input type="tel" name="phone" placeholder="Phone No." required>
+                    </label>
+
+                </div>
+                <div style="display: flex; gap: 50px;">
+                    <label for="text">country :
+                        <br>
+                        <input type="text" name="country" placeholder="Country" style="margin-right: 10px;"
+                            required><br>
+                    </label>
+
+                    <label for="text">City:
+                        <br>
+
+                        <input type="text" name="city" placeholder="City" required><br>
+                    </label>
+
+                </div>
+                <div style="display: flex; gap: 50px;">
+                    <label for="password">password :
+                        <br>
+                        <input type="password" name="password" placeholder="Password" style="margin-right: 10px;"
+                            required><br>
+                    </label>
+
+                    <label for="password">Re-type password :
+                        <br>
+                        <input type="password" name="retypepassword" placeholder="Re-type Password" required><br>
+                    </label>
+
+                </div>
+                <input type="submit" onclick="addUser()" value="Create an Account">
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
